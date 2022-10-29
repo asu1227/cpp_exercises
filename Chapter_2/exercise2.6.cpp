@@ -7,7 +7,7 @@ Enter the number of light years: 4.2
 using namespace std;
 double lightY_cv_astroU(double);    //function prototype
 
-int main()
+int main()//测试用例：如题所示
 {   
     double light_y;
     cout << "Enter the number of light years: ";

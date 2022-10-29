@@ -5,8 +5,8 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main()//测试用例：100miles 9gallons 结果：11.1111miles
+{         //将注释部分可实现，运行部分注释 测试用例：200km 9L 结果：每100公里耗油4.5L 
     double mileage,gasoline;
     cout << "Please enter mileage:___miles\b\b\b\b\b\b\b\b";
     cin >> mileage;

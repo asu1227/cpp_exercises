@@ -15,7 +15,7 @@ struct Pizza
     double weight;
 };
 
-int main()
+int main()//测试用例：best_piz one，1, 2.2
 {
     Pizza pizza = {};
     cout << "Please enter the company name: ";

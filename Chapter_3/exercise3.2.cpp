@@ -10,7 +10,7 @@
 #include <cmath>
 using namespace std;
 
-int main()
+int main()//测试用例：5feet 10inches,132pound 结果：70inches 1.778meters BMI18.6633
 {
     const int feet_cv_inches = 12;
     const double inches_cv_meters = 0.0254;

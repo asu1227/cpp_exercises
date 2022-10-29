@@ -7,7 +7,7 @@ Enter the number of seconds: 31600000
 #include <iostream>
 using namespace std;
 
-int main()
+int main()//测试用例：如题所示
 {
     const int day_hour = 24;
     const int hour_min = 60;

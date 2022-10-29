@@ -18,8 +18,8 @@ int main()
 #include <iostream>
 #include <string>
 
-int main()
-{
+int main()//测试用例：xiaohu，dessert 
+{         //结果：I have some delicious dessert for you, xiaohu.
     using namespace std;
 
     string name;

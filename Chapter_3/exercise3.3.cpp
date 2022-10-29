@@ -10,7 +10,7 @@ Finally, enter the seconds of arc: 19
 #include <iostream>
 using namespace std;
 
-int main()
+int main()//测试用例：如题所示
 {
     const double deg_cv_min = 60;   //degree convert to minute
     const double min_cv_sec = 60;   //minute convert to second

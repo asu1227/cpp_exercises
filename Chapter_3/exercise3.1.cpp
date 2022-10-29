@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 
-int main()
+int main()//测试用例：71 结果：5feet 11inches
 {
     const int foot_cv_inch = 12;
     int my_height;  //my height is 71 inches

@@ -9,7 +9,7 @@ Here's the information in a single string: Fleming, Flip*/
 #include <string>
 using namespace std;
 
-int main()
+int main()//测试用例：如题所示
 {
     string str1;
     string str2;
@@ -21,6 +21,7 @@ int main()
     string str3 = ", ";
     str2 += str3;
     str2 += str1;
+    cout << "Here's the information in a single string: ";
     cout << str2 << endl;
 
     return 0;

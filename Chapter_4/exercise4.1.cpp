@@ -19,7 +19,7 @@ struct usr_info     //structure declaration
     char grade;
     int age;
 };
-int main()
+int main()//测试用例：如题所示
 {
     const int Arsize = 20;
     usr_info usr_1;

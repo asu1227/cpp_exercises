@@ -9,7 +9,7 @@ Here's the information in a single string: Fleming, Flip*/
 #include <cstring>
 using namespace std;
 
-int main()
+int main()//测试用例:如题所示
 {
     char temp_1[20];
     char temp_2[20];
@@ -20,6 +20,7 @@ int main()
     char temp_3[20] = ", ";
     strcat(temp_2,temp_3);
     strcat(temp_2,temp_1);
+    cout << "Here's the information in a single string: ";
     cout << temp_2 << endl;
 
     return 0;

@@ -18,7 +18,7 @@ struct Pizza
     double weight;
 };
 
-int main()
+int main()//测试用例：1, BEST_PIZ 2， 2.2
 {
     Pizza * pn = new Pizza;
     cout << "Please enter diameter: ";

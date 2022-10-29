@@ -4,7 +4,7 @@
 using namespace std;
 int longcodecv(int);    //function prototype
 
-int main()
+int main()//测试用例：任意正整数
 {
     int distance;
     cout << "please enter a distance in long: ";

@@ -8,7 +8,7 @@ Time: 9:28*/
 using namespace std;
 void Time(int,int);     //function prototype
 
-int main()
+int main()//测试用例：如题所示
 {
     int hour,minute;
     cout << "Enter the number of hours: ";

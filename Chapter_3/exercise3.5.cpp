@@ -8,7 +8,7 @@ The population of the US is 4.50492% of the world population. */
 #include <iostream>
 using namespace std;
 
-int main()
+int main()//测试用例：如题所示
 {
     long long world_pop;
     long long country_pop;

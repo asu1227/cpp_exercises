@@ -6,11 +6,11 @@ using namespace std;
 int main()  //测试用例：随意输入数字，直到读到0结束
 {
     cout << "Please enter a number: ";  //提示用户输入数字，默认用户遵守规则
-    int ch = 1; //初始循环条件
+    double ch = 1; //初始循环条件
     while (ch != 0)
         {
             cin >> ch;
-            int sum;
+            double sum;
             sum += ch;
             if(ch != 0)
                 {

@@ -8,7 +8,7 @@ Time:9:28*/
 using namespace std;
 int year_cv_month(int);     //function prototype
 
-int main()
+int main()//测试用例：如题所示
 {
     int age;int hour;int minute;
     cout << "Enter your age: ";

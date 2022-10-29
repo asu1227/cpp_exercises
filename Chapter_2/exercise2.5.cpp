@@ -7,7 +7,7 @@ Please enter a Celsius value:20
 using namespace std;
 double Cel_cv_Fah(double);    //function prototype
 
-int main()
+int main()//测试用例：如题所示
 {
     double Cel;
     cout << "Please enter a Celsius value: ";
