@@ -19,7 +19,7 @@ struct donation{
     double num;
 };
 
-int main()//输入文件为test6.9.txt,出现free(): invalid size与Aborted (core dumped)报错，未解决。
+int main()//输入文件为test6.9.txt,出现free(): invalid size与Aborted (core dumped)报错，未解决。已解决
 {
     ifstream ifs;
     string filename = "test6.9.txt";
@@ -59,7 +59,7 @@ int main()//输入文件为test6.9.txt,出现free(): invalid size与Aborted (cor
     }
     if (mm_2 == 0)
             cout << "none\n";
-    delete pn [10];
+    // delete pn [10];//没有new不能直接delete
 
     return 0;
     

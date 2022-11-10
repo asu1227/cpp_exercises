@@ -20,61 +20,22 @@ double (*pf[3])(double, double);
 可以采用数组初始化语法，并将函数名作为地址来初始化这样的数
 组。*/
 //----------------------------------------------------normal-------------------------------
-// #include <iostream>
-// using namespace std;
-// double addition(double x, double y);
-// double subtraction(double x, double y);
-// double calculate(double x, double y, double (*pn)(double, double));
-
-// int main()//测试用例：2.5，10.4，q
-// {
-//     double p,q;
-//     cout << "enter 'q' to exit.\n";
-//     cout << "Please enter number_1 and number_2: ";
-//     while (cin >> p >> q)
-//     {
-//         double add,sub;
-//         add = calculate(p, q, addition);
-//         sub = calculate(p, q, subtraction);
-//         cout << p << " + " << q << " = " << add << endl;
-//         cout << p << " - " << q << " = " << sub << endl;
-//         cout << "Please enter number_1 and number_2: ";
-//     }
-//     return 0;
-// }
-// double calculate(double x, double y, double (*pn)(double, double))
-// {
-//     return pn(x , y);
-// }
-// double addition(double x, double y)
-// {
-//     return x + y;
-// }
-// double subtraction(double x, double y)
-// {
-//     return x - y;
-// }
-//--------------------------------------------adventure------------------------------------
 #include <iostream>
 using namespace std;
-
 double addition(double x, double y);
 double subtraction(double x, double y);
 double calculate(double x, double y, double (*pn)(double, double));
 
 int main()//测试用例：2.5，10.4，q
 {
-    double (*pf[3])(double, double);
-    pf[0] = addition;
-    pf[1] = subtraction;
     double p,q;
     cout << "enter 'q' to exit.\n";
     cout << "Please enter number_1 and number_2: ";
     while (cin >> p >> q)
     {
         double add,sub;
-        add = calculate(p, q, pf[0]);
-        sub = calculate(p, q, pf[1]);
+        add = calculate(p, q, addition);
+        sub = calculate(p, q, subtraction);
         cout << p << " + " << q << " = " << add << endl;
         cout << p << " - " << q << " = " << sub << endl;
         cout << "Please enter number_1 and number_2: ";

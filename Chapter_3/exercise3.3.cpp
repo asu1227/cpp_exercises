@@ -14,7 +14,7 @@ int main()//测试用例：如题所示
 {
     const double deg_cv_min = 60;   //degree convert to minute
     const double min_cv_sec = 60;   //minute convert to second
-    int deg,min,sec;
+    int deg,m_in,sec;
     cout << "Enter a latitude in degrees, minutes, and seconds:\n";
     cout << "Fisrt, enter the degree: ";
     cin >> deg;
@@ -23,10 +23,10 @@ int main()//测试用例：如题所示
     cout << "Finally, enter the seconds of arc: ";
     cin >> sec;
     double min_sec = sec / min_cv_sec;
-    double min_f = min + min_sec;   //final minute
+    double min_f = m_in + min_sec;   //final minute
     double deg_min = min_f / deg_cv_min;
     double deg_f = deg + deg_min;   //final degree
-    cout << deg << " degrees, " << min << " minutes, " << sec << " seconds ";
+    cout << deg << " degrees, " << m_in << " minutes, " << sec << " seconds ";
     cout << " = " << deg_f << " degrees" << endl;
 
     return 0;

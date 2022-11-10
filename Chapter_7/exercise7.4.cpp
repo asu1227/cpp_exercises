@@ -30,7 +30,7 @@ long double probability (unsigned numbers, unsigned picks)
     long double result = 1.0;
     long double n = numbers;
     unsigned p = picks;
-    for (n,p; p > 0; n--,p--)
+    for (; p > 0; n--,p--)
     {
         result *= n / p;//超几何分布问题
     }

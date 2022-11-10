@@ -9,19 +9,19 @@ using namespace std;
 
 int main()//测试用例：如题所示
 {
-    const int day_hour = 24;
-    const int hour_min = 60;
-    const int min_sec = 60;
+    const int DAY_HOUR = 24;
+    const int HOUR_MIN = 60;
+    const int MIN_SEC = 60;
     int day,hour,min;
     long sec;
     cout << "Enter the number of seconds: ";
     cin >> sec;
-    int sec_f = sec % min_sec;  //final_second
-    min = sec / min_sec;
-    int min_f = min % hour_min; //final_minute
-    hour = min / hour_min;
-    int hour_f = hour % day_hour;   //final_hour
-    day = hour / day_hour;
+    int sec_f = sec % MIN_SEC;  //final_second
+    min = sec / MIN_SEC;
+    int min_f = min % HOUR_MIN; //final_minute
+    hour = min / HOUR_MIN;
+    int hour_f = hour % DAY_HOUR;   //final_hour
+    day = hour / DAY_HOUR;
     cout << sec << " seconds " << "= " << day << " days, ";
     cout << hour_f << " hours, " << min_f << " minutes, " << sec_f << " seconds\n";
 

@@ -5,22 +5,17 @@ using namespace std;
 
 int main()  //测试用例：随意输入数字，直到读到0结束
 {
-    cout << "Please enter a number: ";  //提示用户输入数字，默认用户遵守规则
-    double ch = 1; //初始循环条件
-    while (ch != 0)
+    cout << "Please enter a number: ";
+      //提示用户输入数字，默认用户遵守规则
+    double ch; //初始循环条件
+    double sum = 0;
+    while (cin >> ch && ch)
         {
-            cin >> ch;
-            double sum;
             sum += ch;
-            if(ch != 0)
-                {
-                    cout << "sum = " << sum << endl;
-                    cout << "Please continue to enter a number: ";
-                }
-            else
-                cout << "calculation is over.\n"; 
+            cout << "sum = " << sum << endl;
+            cout << "Please continue to enter a number: ";
         }
+    cout << "calculation is over.\n"; 
 
     return 0;
-    
 }

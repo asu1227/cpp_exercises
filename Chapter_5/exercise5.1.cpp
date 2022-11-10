@@ -12,8 +12,8 @@ int main()  //测试用例：2，9 结果：44
     cin >> num_1;
     cout << "Please enter a number(as a end): ";
     cin >> num_2;
-    int sum;
-    for (num_1; num_1 <= num_2; num_1++)
+    int sum = 0;
+    for (; num_1 <= num_2; num_1++)
     {
         sum += num_1;
     }

@@ -23,7 +23,7 @@ int main() //测试用例：1，2，3，4，5，6，7，8
 int recursion(int n)
 {
     if (n > 0)
-        n *= recursion(n - 1);
+        return n * recursion(n - 1);
     else if (n == 0)
         return 1;
 }

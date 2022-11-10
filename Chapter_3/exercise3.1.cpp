@@ -6,12 +6,12 @@ using namespace std;
 
 int main()//测试用例：71 结果：5feet 11inches
 {
-    const int foot_cv_inch = 12;
+    const int FOOT_TO_INCH = 12;
     int my_height;  //my height is 71 inches
     cout << "Please enter your height(units are inches):___\b\b\b ";
     cin >> my_height;
-    int feet = my_height / foot_cv_inch;
-    int inches = my_height % foot_cv_inch;
+    int feet = my_height / FOOT_TO_INCH;
+    int inches = my_height % FOOT_TO_INCH;
     cout << "Your height is " << feet << " feet " << inches << " inches.\n";
     
     return 0;

@@ -15,12 +15,9 @@ int main()//测试用例：如题所示
     string str [ArSize];
     int i = 0;
     cout << "Enter words (to stop, type the word done):" << endl;
-    cin >> str[i];
-    while (str[i] != "done")//如果不是done，则进入循环
+    while (i < ArSize && cin >> str[i] && str[i] != "done")//如果不是done，则进入循环
         {
             i ++;//最后得str[i]=“done”
-            cout << "Enter words (to stop, type the word done):" << endl;
-            cin >> str[i];
         }
         for (int j = 0; j < i; j++)//到j=i停止，不会输出cr[i]
         {

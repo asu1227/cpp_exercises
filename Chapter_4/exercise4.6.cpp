@@ -20,7 +20,9 @@ int main()
         {"Tang", 5.2, 450}
     };
     cout << "name: " << candy[0].name << " " << candy[1].name << " " << candy[2].name << endl;
-
+    cout << "weight: " << candy[0].weight << " " << candy[1].weight << " " << candy[2].weight << endl;
+    cout << "calorie: " << candy[0].calorie << " " << candy[1].calorie << " " << candy[2].calorie << endl;
+    
     return 0;
     
 }

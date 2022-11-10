@@ -17,27 +17,18 @@ int main()  //测试用例：如题目所述
     char cr [ArSize][ArSize];
     int i = 0;
     cout << "Enter words (to stop, type the word done):" << endl;
-    cin.getline(cr[i], ArSize);
-    // if (!strcmp(cr[i], "done"))//如果输入done
-    // {
-    //     cout << "You entered a total of 0 words" << endl;
-    //     return 0;
-    // }
-    // else//如果输入的不是done
-    // {
-        while (strcmp(cr[i], "done"))//如果不是done，则进入循环
-        {
-            i ++;//最后得cr[i]=“done”
-            cout << "Enter words (to stop, type the word done):" << endl;
-            cin.getline(cr[i], ArSize);
-        }
-        for (int j = 0; j < i; j++)//到j=i停止，不会输出cr[i]
-        {
-            cout << cr[j] << " ";
-        }
+   
+    while (i < ArSize && cin >> cr[i] && strcmp(cr[i], "done"))//如果不是done，则进入循环
+    {
+        i ++;//最后得cr[i]=“done”
+    }
+    for (int j = 0; j < i; j++)//到j=i停止，不会输出cr[i]
+    {
+        cout << cr[j] << " ";
+    }
     cout << endl;
     cout << "You entered a total of " << i << " words" << endl;
 
     return 0;
-    // }
+    
 }

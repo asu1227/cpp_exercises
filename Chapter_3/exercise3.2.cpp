@@ -8,31 +8,32 @@
 换因子。*/
 #include <iostream>
 #include <cmath>
+#include <string>
 using namespace std;
 
 int main()//测试用例：5feet 10inches,132pound 结果：70inches 1.778meters BMI18.6633
 {
-    const int feet_cv_inches = 12;
-    const double inches_cv_meters = 0.0254;
-    const double pounds_cv_kilograms = 2.2;
+    const int FEET_TO_INCHES = 12;
+    const double INCHES_TO_METERS = 0.0254;
+    const double POUNDS_TO_KILOGRAMS = 2.2;
     int my_height_feet,my_heigt_inches;     //my height is 5 feet 10 inches
     int my_weight_pound;    //my weight is 132 pound
     cout << "Please enter your heigt:__feet__inches.\n";     //PROMPT提示符
-    cout << "__feet\b\b\b\b\b\b";
+    cout << "__feet\r";
     cin >> my_height_feet;
-    cout << "__inches\b\b\b\b\b\b\b\b";
+    cout << "__inches" + string(8, '\b');//使用8个'/b字符'
     cin >> my_heigt_inches;
     cout << "Please enter your weight:__pounds.\n";
-    cout << "___pounds\b\b\b\b\b\b\b\b\b";
+    cout << "___pounds\r";
     cin >> my_weight_pound;
     int usr_height_inches;
-    usr_height_inches = my_height_feet * feet_cv_inches + my_heigt_inches; 
+    usr_height_inches = my_height_feet * FEET_TO_INCHES + my_heigt_inches; 
     cout << "Your height is " << usr_height_inches << " inches.\n";     //usr_height_inches
     double usr_height_meters;
-    usr_height_meters = usr_height_inches * inches_cv_meters;
+    usr_height_meters = usr_height_inches * INCHES_TO_METERS;
     cout << "Your height is " << usr_height_meters << " meters.\n";     //usr_height_meters
     int usr_weight_kilograms;
-    usr_weight_kilograms = my_weight_pound / pounds_cv_kilograms;       //usr_weight_kilograms
+    usr_weight_kilograms = my_weight_pound / POUNDS_TO_KILOGRAMS;       //usr_weight_kilograms
     double BMI;
     double usr_height_meters_pow2 = pow(usr_height_meters,2);
     BMI = usr_weight_kilograms / usr_height_meters_pow2;

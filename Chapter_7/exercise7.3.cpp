@@ -45,6 +45,5 @@ void show_strc (box ch)
 }
 void change_strc_vol (box * ch)
 {
-    const int i = 1;
-    ch->volume = i;
+    ch->volume = (ch->height) * (ch->height);
 }

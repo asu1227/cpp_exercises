@@ -27,7 +27,7 @@ int main()//测试用例：1，2，3，4，ddd
         total += ai[j];
     }
     double ave = total/i;
-    int m;
+    int m = 0;
     for (int j = 0; j < i; j++)
     {
         if (ai[j] > ave)
