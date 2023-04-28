@@ -12,7 +12,7 @@ const int ArSize = 20;
 
 int main()//测试用例：如题所示
 {
-    string str [ArSize];
+    string str [ArSize]; //string数组
     int i = 0;
     cout << "Enter words (to stop, type the word done):" << endl;
     while (i < ArSize && cin >> str[i] && str[i] != "done")//如果不是done，则进入循环

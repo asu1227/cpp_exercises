@@ -23,16 +23,16 @@ int main()//测试用例：如题所述
     {
         switch (ch)
         {
-            case 'c' : cout << "A tiger is a carnivore.";
+            case 'c' : cout << "A tiger is a carnivore.\n";
                        break;
-            case 'p' : cout << "Chopin is a pianist.";
+            case 'p' : cout << "Chopin is a pianist.\n";
                        break;
-            case 't' : cout << "A maple is a tree.";
+            case 't' : cout << "A maple is a tree.\n";
                        break;
-            case 'g' : cout << "Xenoblade3 is a game.";
+            case 'g' : cout << "Xenoblade3 is a game.\n";
                        break;
-            default  : cout << "Please enter a c, p, t, or g: ";
         }
+        cout << "Please enter a c, p, t, or g: ";
         cin >> ch;
     }
     cout << "Bye!\n";

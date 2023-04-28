@@ -16,7 +16,8 @@ struct CandyBar
     double weight;
     int carlorie;
 };
-void set_struct(CandyBar & st, const char * ch = "Millennium Munch", double db = 2.85, int n = 350);
+void set_struct(CandyBar & st, const char * ch = "Millennium Munch", 
+    double db = 2.85, int n = 350);
 void pri_struct(const CandyBar & st);
 
 int main()//关于默认参数和结构引用的练习

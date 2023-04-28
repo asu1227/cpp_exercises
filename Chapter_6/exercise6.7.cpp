@@ -20,6 +20,7 @@ int main()//测试用例：如题所示
     cout << "Enter words (q to quit):\n";
     string word;
     int vowel,consonant,other = 0;
+    vowel = consonant = other;
     //使用6.1的代码无法定位首字母 问题：如何定位首字母。解决办法：使用string类
     cin >> word;
     while(word != "q")

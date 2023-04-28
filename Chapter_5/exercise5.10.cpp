@@ -13,7 +13,7 @@ Enter number of rows:5
 #include <iostream>
 using namespace std;
 
-int main()//测试用例：如图所示
+int main()//测试用例：如题所示
 {
     cout << "Please enter number of rows:";
     int rows;
@@ -21,14 +21,10 @@ int main()//测试用例：如图所示
     char cr[rows][rows];
     for (int i = 0; i < rows; i++) //初始化
         for (int j = 0; j < rows; j++)
-        {
             cr[i][j] = '-';
-        }
     for (int i = 0; i < rows; i++) //形成矩阵
         for (int j = 0; j <= i; j++)
-        {
             cr[i][j] = '*';
-        }
     for (int i = 0; i < rows; i++)
         {
             for (int j = rows-1; j >= 0; j--)//翻转输出

@@ -9,17 +9,16 @@ using namespace std;
 
 int main()  //测试用例：1,2,3,4,5,6,7,8,9,10,11,12  结果：78
 {
-    string months[12] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
-    int sum[12] = { 0 };
+    int sale[12], sum = 0;
+    string months[12] = {"January", "February", "March", "April",
+     "May", "June", "July", "August", "September", "October", "November", "December"};
     for (int i = 0; i < 12; i++)
         {   
             cout << "The sales volume of " << months[i] << ": ";
-            cin >> sum[i];
+            cin >> sale[i];
+            sum += sale[i];
         }
-    int sum1;
-    for (int i = 0; i < 12; i++)
-        sum1 += sum[i];
-    cout << "The sales volume of the year: " << sum1 << endl;
+    cout << "The sales volume of the year: " << sum << endl;
 
     return 0;
 

@@ -26,11 +26,11 @@ struct car
 
 int main()  //测试用例：如题目中所述
 {
-    int i;
+    int i = 0;
     cout << "How many cars do you wish to catalog? ";
     cin >> i;
     cin.get();  //接收回车符
-    car * pn = new car [i];
+    car * pn = new car [i]; //创建car数组并让指针pn指向car[0]
     for (int j = 0; j < i; j++)
         {
             cout << "Please enter the make: ";
@@ -42,7 +42,7 @@ int main()  //测试用例：如题目中所述
     cout << "Here is your collection:\n";
     cout << pn -> year << " " << pn -> manufacturer << endl;
     cout << (pn+1) -> year << " " << (pn+1) -> manufacturer << endl;
-    delete[] pn;
+    delete[] pn; //删除指针pn指向的结构数组空间
     
     return 0;
 

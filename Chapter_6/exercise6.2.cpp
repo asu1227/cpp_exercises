@@ -10,7 +10,7 @@ int main()//测试用例：1，2，3，4，ddd
     const int Max = 10;
     array<double, Max> ai;
 
-    double donation[Max];
+    double donation[Max]; //创建一个double数组
     cout << "Please enter your donations.\n";
     cout << "You can enter " << Max << " donations at most.\n";
     int i;

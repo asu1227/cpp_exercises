@@ -46,7 +46,7 @@ struct bop {
     int preference;        // 0 = fullname,1 = title,2 = bopname
 };
 
-int main()//测试用例：如图所示
+int main()//测试用例：如题所示
 {
     char ch;
     bop bp[5] = 
@@ -84,7 +84,6 @@ int main()//测试用例：如图所示
                         }
                         break;
 
-            default  : cout << "Next choice: ";
         }
         cout << "Next choice: ";
         cin >> ch;

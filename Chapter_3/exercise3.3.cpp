@@ -19,7 +19,7 @@ int main()//测试用例：如题所示
     cout << "Fisrt, enter the degree: ";
     cin >> deg;
     cout << "Next, enter the minutes of arc: ";
-    cin >> min;
+    cin >> m_in;
     cout << "Finally, enter the seconds of arc: ";
     cin >> sec;
     double min_sec = sec / min_cv_sec;

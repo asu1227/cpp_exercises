@@ -18,25 +18,24 @@ struct donation{
 int main()//测试用例1：2，"David L",10000.1,"Alex N"，500
 {         //测试用例2：3,"Wang J",30000,"Wang L",50000,"J J",89999
     cout << "Please enter the number of donations: ";
-    int don;
+    int don = 0;
     cin >> don;
-    donation *pn [10];//declare a array of pointers
+    donation *pn  = new donation [don];//创建一个结构数组，pn指向donation[0]
     for (int i = 0; i < don; i++)
     {
         cin.get();//接收之前输入的回车符
-        *(pn+i) = new donation;
         cout << "Please enter the name of donations:";
-        getline(cin, pn[i]->name);
+        getline(cin, (pn+i)->name);
         cout << "Please enter the num of donations:";
-        cin >> pn[i]->num;
+        cin >> pn[i].num;
     }
     cout << "Grand Patrons: " << endl;
     int mm_1 = 0;
     for (int i = 0; i < don; i++)
     {
-        if(pn[i]->num >= 10000)
+        if(pn[i].num >= 10000)
         {
-            cout << pn[i]->name << ":" << pn[i]->num << endl;
+            cout << pn[i].name << ":" << pn[i].num << endl;
             mm_1 ++;
         }
     }
@@ -46,15 +45,15 @@ int main()//测试用例1：2，"David L",10000.1,"Alex N"，500
     int mm_2 = 0;
     for (int i = 0; i < don; i++)
     {
-        if(pn[i]->num < 10000)
+        if(pn[i].num < 10000)
         {
-            cout << pn[i]->name << ":" << pn[i]->num << endl;
+            cout << pn[i].name << ":" << pn[i].num << endl;
             mm_2 ++;
         }
     }
     if (mm_2 == 0)
             cout << "none\n";
-    delete  pn[10];
+    delete [] pn;//释放pn指向的结构数组的空间
 
     return 0;
     

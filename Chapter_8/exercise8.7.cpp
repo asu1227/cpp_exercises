@@ -106,7 +106,7 @@ void SumArray(T arr[], int n)
 {
     using namespace std;
     cout << "template A\n";
-    T sum_a;
+    T sum_a = 0;
     for (int i = 0; i < n; i++)
         sum_a += arr[i];
     cout << "sum:" << sum_a << endl;
